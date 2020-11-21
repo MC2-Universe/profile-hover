@@ -27,7 +27,7 @@
   ],
   "homepage": "https://gitlab.com/mc2labs/universe/aether/modules/profile-hover/-/blob/master/README.md",
   "dependencies": {
-    "@mc3-aether/aether": "^1.17.1",
+    "@mc3-aether/aether": "^1.22.6",
     "@fortawesome/fontawesome-svg-core": "^1.2.15",
     "@fortawesome/free-brands-svg-icons": "^5.7.2",
     "@fortawesome/free-regular-svg-icons": "^5.7.2",
