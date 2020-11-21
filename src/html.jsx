@@ -136,26 +136,26 @@ module.exports = ({ dom, React, Fragment }) => {
   const HoverFooterWeb3MobileLink = ({ data, handleCopySuccessful }) => (
     <p
       onClick={() => addToClipBoardLinks(
-        `https://3box.io/${data.address}`,
+        `https://me.mc3.network/${data.address}`,
         handleCopySuccessful,
         'footer'
       )}
       className={style.boxLinkText}
     >
-      View 3Box
-    <img src="https://i.imgur.com/bT9PQlL.png" className={style.logo} />
+      View MC3
+    <img src="https://user-images.githubusercontent.com/147231/99607832-7eefbe00-29c1-11eb-9ad8-039323166a90.png" className={style.logo} />
     </p>
   );
 
   const HoverFooterLink = ({ data }) => (
     <a
       className={style.boxLinkText}
-      href={`https://3box.io/${data.address}`}
+      href={`https://me.mc3.network/${data.address}`}
       target="_blank"
       rel="noopener noreferrer"
     >
-      View 3Box
-      <img src="https://i.imgur.com/bT9PQlL.png" className={style.logo} />
+      View MC3 Me
+      <img src="https://user-images.githubusercontent.com/147231/99607832-7eefbe00-29c1-11eb-9ad8-039323166a90.png" className={style.logo} />
     </a>
   );
 
@@ -255,15 +255,15 @@ module.exports = ({ dom, React, Fragment }) => {
       {hasWeb3Mobile ? (
         <p
           onClick={() => addToClipBoardLinks(
-            `https://3box.io/${data.address}`,
+            `https://m3.mc3.network/${data.address}`,
             handleCopySuccessful,
-            'threeBoxProfile'
+            'mc3MeProfile'
           )}
           className={style.profileText}>
           {data.name}
         </p>
       ) : (<a
-        href={`https://3box.io/${data.address}`}
+        href={`https://m3.mc3.network/${data.address}`}
         className={style.profileText}
         target="_blank"
         rel="noopener noreferrer"
@@ -272,7 +272,7 @@ module.exports = ({ dom, React, Fragment }) => {
       </a>)}
       {data.emoji && <span>{data.emoji}</span>}
 
-      {copySuccessful === 'threeBoxProfile' && <FontAwesomeIcon icon={faCheck} />}
+      {copySuccessful === 'mc3MeProfile' && <FontAwesomeIcon icon={faCheck} />}
     </div>
   )
 

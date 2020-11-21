@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { getProfile, getVerifiedAccounts } from "3box/lib/api";
+import { getProfile, getVerifiedAccounts } from "@mc3-aether/aether/lib/api";
 import { getAddressDisplay, formatProfileData, formatUrl, checkIsMobile } from './utils';
 const { BaseTemplate, LoadingTemplate } = require('./html')({ React, Fragment });
 
@@ -44,7 +44,7 @@ export default class ProfileHover extends React.PureComponent {
       const verified = await getVerifiedAccounts(profile);
       this.setState({ profile, verified, hasUpdated: false });
     } catch (error) {
-      console.error('3box profile fetch failed', error);
+      console.error('MC3 Me profile fetch failed', error);
     }
   }
 

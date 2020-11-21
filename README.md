@@ -1,13 +1,6 @@
-[![Discord](https://img.shields.io/discord/484729862368526356.svg?style=for-the-badge)](https://discordapp.com/invite/Z3f3Cxy)
-[![npm](https://img.shields.io/npm/v/profile-hover.svg?style=for-the-badge)](https://www.npmjs.com/package/profile-hover)
-[![Twitter Follow](https://img.shields.io/twitter/follow/3boxdb.svg?style=for-the-badge&label=Twitter)](https://twitter.com/3boxdb)
-
 # Profile Hover
 
 `profile-hover` is a drop-in component that displays profile metadata for any ethereum address. Available in React and HTML/CSS versions.
-
-![Profile Hover](./example/profile-hover.gif)
-
 
 ## Component Overview
 The Profile Hover consists of two components: the `Tile`, which is displayed on the page, and the `Hover`, which is displayed when the Tile is hovered. Profile Hover is available for React and HTML/CSS apps.
@@ -18,15 +11,15 @@ The Profile Hover consists of two components: the `Tile`, which is displayed on 
 Installation:
 
 ```shell
-npm i -S profile-hover
+npm i -S @mc3-aether/profile-hover
 ```
 
 Usage:
 
 ```jsx
-import ProfileHover from 'profile-hover';
+import ProfileHover from '@mc3-aether/profile-hover';
 
-const MyComponent = () => (<ProfileHover address={'0xa8ee0babe72cd9a80ae45dd74cd3eae7a82fd5d1'} />);
+const MyComponent = () => (<ProfileHover address={'0x358260430fc05ac0741e2f51401bf88da0050f0f'} />);
 ```
 
 ### HTML Element
@@ -34,13 +27,13 @@ const MyComponent = () => (<ProfileHover address={'0xa8ee0babe72cd9a80ae45dd74cd
 First add the script at the end of your page.
 
 ```html
-  <script type="text/javascript" src="https://unpkg.com/profile-hover"></script>
+  <script type="text/javascript" src="https://unpkg.com/@mc3-aether/profile-hover"></script>
 ```
 
 Then add the following tag where ever you display an address.
 
 ```html
-  <threebox-address data-address='0xa8ee0babe72cd9a80ae45dd74cd3eae7a82fd5d1'></threebox-address>
+  <mc3-address data-address='0x358260430fc05ac0741e2f51401bf88da0050f0f'></mc3-mc3>
 ```
 
 Additional Options:
@@ -48,15 +41,15 @@ Additional Options:
 Add `data-display='full'` to show the entire address instead of the shorten display.
 
 ```html
-  <threebox-address data-address='0xa8ee0...' data-display='full'></threebox-address>
+  <mc3-address data-address='0x358260...' data-display='full'></mc3-mc3>
 ```
 
 Add `data-theme='none'` to not use any of our address bar styling. Allows you to wrap any existing elements in an address hover.
 
 ```html
-  <threebox-address data-address='0xa8ee0...' data-theme='none'>
+  <mc3-address data-address='0x358260...' data-theme='none'>
     ... your own html and styling
-  </threebox-address>
+  </mc3-address>
 ```
 
 ## How to Customize
@@ -80,15 +73,15 @@ Here are the ways you can customize the profile hover to better suit your app's 
 #### Prop Types example
 ```jsx
 <ProfileHover 
-  address={'0xa8ee0...'}
+  address={'0x358260...'}
   orientation="bottom"
   noCoverImg
-  url="https://3box.io/"
+  url="https://mc3.network/"
 />
 ```
 ```jsx
 <ProfileHover 
-  address={'0xa8ee0...'} 
+  address={'0x358260...'} 
   noTheme
 >
   ... your own html and styling
@@ -97,6 +90,3 @@ Here are the ways you can customize the profile hover to better suit your app's 
 
 ## Differences Between Desktop and Mobile
 Given the current state of Web3 mobile dapp browsers and their lack of browser tab support, the behavior of the profile-hover React component has minor differences depending on device context. On desktop web and web2 mobile browsers, out-bound links within the hover element work as usual and open a new tab. However on Web3 mobile dapp browsers, since tabs do not exist, clicking on a link within the hover component will, instead, copy that URL to a users clipboard.
-
-## Maintainers
-[@zachferland](https://github.com/zachferland)

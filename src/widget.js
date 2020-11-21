@@ -1,5 +1,5 @@
 import dom, { Fragment } from 'jsx-render';
-import { getProfile, getVerifiedAccounts } from "3box/lib/api";
+import { getProfile, getVerifiedAccounts } from "@mc3-aether/aether/lib/api";
 import { getAddressDisplay, formatProfileData, addToClipboard } from './utils';
 import store from 'store'
 import makeBlockie from 'ethereum-blockies-base64';
@@ -90,7 +90,7 @@ const createPlugins = () => {
   window['boxCopyAddress_f1kx'] = copyAddress
 
   document.addEventListener("DOMContentLoaded", function(event) {
-    const buttonArray = document.getElementsByTagName("threebox-address")
+    const buttonArray = document.getElementsByTagName("mc3-address")
     initPlugins(buttonArray)
     window.addEventListener('load', async () => {
       loadPluginData(buttonArray)

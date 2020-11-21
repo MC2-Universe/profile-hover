@@ -38,7 +38,7 @@ module.exports = {
             options: {
               sourceMap: true,
               modules: true,
-              localIdentName: "threeboxProfileHover__[name]_[local]"
+              localIdentName: "mc3ProfileHover__[name]_[local]"
             }
           },
           {

@@ -12,7 +12,7 @@ const Example = ({}) => {
         <ProfileHover orientation="right" noImgs showName tileStyle address='0xf3b281F3Dd2b87c7b3EAcC0402a4FD7d827F2956' />
       </div>
       <div className='ethAddress'>
-        <ProfileHover orientation="right" noCoverImg showName tileStyle address='0xa8ee0babe72cd9a80ae45dd74cd3eae7a82fd5d1' />
+        <ProfileHover orientation="right" noCoverImg showName tileStyle address='0x358260430fc05ac0741e2f51401bf88da0050f0f' />
       </div>
       <div className='ethAddress'>
         <ProfileHover orientation="right" noCoverImg showName tileStyle address='0x5c44e8982fa3c3239c6e3c5be2cc6663c7c9387e' />
@@ -24,11 +24,11 @@ const Example = ({}) => {
         <ProfileHover orientation="right" showName address='0xff326878d13b33591d286372e67b4af05cd100bd' />
       </div>
       <div className='ethAddress'>
-        <ProfileHover orientation="right" noImgs showName address='0xa8ee0babe72cd9a80ae45dd74cd3eae7a82fd5d1' fullDisplay />
+        <ProfileHover orientation="right" noImgs showName address='0x358260430fc05ac0741e2f51401bf88da0050f0f' fullDisplay />
       </div>
       <div className='ethAddress'>
-        <ProfileHover orientation="right" showName address='0xa8ee0babe72cd9a80ae45dd74cd3eae7a82fd5d1' noTheme>
-          0xa8ee0babe72cd9a80ae45dd74cd3eae7a82fd5d1
+        <ProfileHover orientation="right" showName address='0x358260430fc05ac0741e2f51401bf88da0050f0f' noTheme>
+          0x358260430fc05ac0741e2f51401bf88da0050f0f
         </ProfileHover>
       </div>
     </>
