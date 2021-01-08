@@ -142,7 +142,7 @@ module.exports = ({ dom, React, Fragment }) => {
       )}
       className={style.boxLinkText}
     >
-      View MC3
+      View KindId
     <img src="https://user-images.githubusercontent.com/147231/99607832-7eefbe00-29c1-11eb-9ad8-039323166a90.png" className={style.logo} />
     </p>
   );
@@ -154,7 +154,7 @@ module.exports = ({ dom, React, Fragment }) => {
       target="_blank"
       rel="noopener noreferrer"
     >
-      View MC3 Me
+      View KindId
       <img src="https://user-images.githubusercontent.com/147231/99607832-7eefbe00-29c1-11eb-9ad8-039323166a90.png" className={style.logo} />
     </a>
   );

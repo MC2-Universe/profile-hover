@@ -44,7 +44,7 @@ export default class ProfileHover extends React.PureComponent {
       const verified = await getVerifiedAccounts(profile);
       this.setState({ profile, verified, hasUpdated: false });
     } catch (error) {
-      console.error('MC3 Me profile fetch failed', error);
+      console.error('KindiD profile fetch failed', error);
     }
   }
 
