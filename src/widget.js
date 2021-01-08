@@ -1,5 +1,5 @@
 import dom, { Fragment } from 'jsx-render';
-import { getProfile, getVerifiedAccounts } from "@mc3-aether/aether/lib/api";
+import { getProfile, getVerifiedAccounts } from '3box/lib/api';
 import { getAddressDisplay, formatProfileData, addToClipboard } from './utils';
 import store from 'store'
 import makeBlockie from 'ethereum-blockies-base64';

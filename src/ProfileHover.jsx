@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { getProfile, getVerifiedAccounts } from "@mc3-aether/aether/lib/api";
+import { getProfile, getVerifiedAccounts } from '3box/lib/api';
 import { getAddressDisplay, formatProfileData, formatUrl, checkIsMobile } from './utils';
 const { BaseTemplate, LoadingTemplate } = require('./html')({ React, Fragment });
 
